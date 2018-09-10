@@ -1,0 +1,105 @@
+.jumbotron {
+    margin-bottom: 0px;
+    height: 350px;
+    color: black;
+    background: transparent;
+}
+
+.menub {
+padding-top: 35px;
+}
+
+.selected {
+    color: black;
+    text-decoration: underline;
+}
+
+.noselected {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.arrow-left {
+  display: inline;
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-top: 42px;
+  margin-left: 2px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right:8px solid black;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s; /* For Safari 3.1 to 6.0 */
+  transition: opacity 0.7s;
+}
+
+#Matias-text {
+    display: inline;
+    padding: 5px;
+    float:right;
+    font-size: 10px;
+    position: absolute;
+    width: 85px;
+    text-align: left;
+    height: 100px;
+    margin-left: 10px;
+    visibility: hidden;
+    border: 0px solid gray;
+    border-radius: 7px;
+    background-color: black;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: opacity 0.7s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.7s;
+}
+#Matias {
+    content: url("matias2.jpg");
+}
+#Matias:hover {
+    content: url("matias.png");
+}
+
+#Matias:hover ~ #Matias-text {
+    visibility: hidden;
+    opacity: 0.8;
+}
+#Matias:hover + .arrow-left {
+    visibility: hidden;
+    opacity: 0.8;
+}
+#Ruiqi {
+    content: url("ruiqi.jpg");
+}
+#Francisco {
+    content: url("francisco.jpg");
+}
+#Francisco:hover {
+    content: url("francisco2.jpg");
+}
+#Audrey {
+    content: url("audrey.png");
+}
+#Felipe {
+    content: url("felipe.jpg");
+}
+#Landon {
+    content: url("landon.jpg");
+}
+#Landon:hover {
+    content: url("landon2.jpg");
+}
+#Weixiang {
+    content: url("weixiang.jpg");
+}
+
+#Di {
+    content: url("mark.png");
+}
+
+#Siwei {
+    content: url("siwei.jpg");
+}
