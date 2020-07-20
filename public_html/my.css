@@ -6,7 +6,11 @@
 }
 
 .menub {
-padding-top: 35px;
+    padding-top: 35px;
+}
+
+.menub h4 {
+    font-size: 22px;
 }
 
 .selected {
