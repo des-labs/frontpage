@@ -12,41 +12,81 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="my.css" type="text/css"/>
 
-
+  <style>
+    .fa-chevron-up,
+    .fa-chevron-down
+     {
+      color: darkgray;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 2.6rem;
+    }
+    .img-project {
+      display: block;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .img-border {
+      border: 1px darkgray solid;
+      padding: 1rem;
+      text-align: center;
+    }
+    ul.project-list > li > a {
+      color: inherit;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
 
 <div class="container">
   <div class="jumbotron">
-  <div class="row">
-    <div class="col-md-10 col-sm-9 col-xs-12" style="background-color:white; text-align: left">
-      <h1><img src="Logo.png" class="img-circle" alt="Des_logo" width="24%"> DES Labs</h1>
+    <div class="row">
+      <div class="col-md-10 col-sm-9 col-xs-12" style="background-color:white; text-align: left">
+        <h1><img src="Logo.png" class="img-circle" alt="Des_logo" width="24%"> DES Labs</h1>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-12" style="background-color:white; text-align: right">
+        <div class="menub">
+            <a href="index.html"  class="noselected"><h4><i class="fa fa-home" aria-hidden="true"></i> Home</h4></a>
+            <a href="about.html" class="noselected"><h4><i class="fa fa-users" aria-hidden="true"></i> People</h4></a>
+            <a href="projects.html" class="selected"><h4><i class="fa fa-tasks" aria-hidden="true"></i> Projects</h4></a>
+            <a href="https://des.ncsa.illinois.edu/help"  class="noselected"><h4><i class="fa fa-question" aria-hidden="true"></i> Help</h4></a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-2 col-sm-3 col-xs-12" style="background-color:white; text-align: right">
-      <div class="menub">
-        <a href="index.html"  class="noselected"><h4><i class="fa fa-home" aria-hidden="true"></i> Home</h4></a>
-        <a href="about.html" class="noselected"><h4><i class="fa fa-users" aria-hidden="true"></i> People</h4></a>
-        <a href="projects.html" class="selected"><h4><i class="fa fa-tasks" aria-hidden="true"></i> Projects</h4></a>
-        <a href="https://des.ncsa.illinois.edu/help"  class="noselected"><h4><i class="fa fa-question" aria-hidden="true"></i> Help</h4></a>
-    </div>
-</div>
-</div>
   </div>
-<h4>At the National Center for Supercomputing Applications (NCSA), we develop clever scientific web applications and tools to interact, analyze and visualize data from astronomical surveys to speed the scientific discovery process.<h4>
+  <div class="row">
+    <h2>Current Projects</h2>
+    <ul class="project-list" style="font-size: 1.8rem; list-style: none; padding: 0rem;">
+      <li><a href="#desaccess_development"><i class="fa fa-chevron-down" aria-hidden="true"></i>DESaccess development</a></li>
+      <li><a href="#galaxy_images"><i class="fa fa-chevron-down" aria-hidden="true"></i>Galaxy images recommendation system</a></li>
+      <li><a href="#monitoring_services"><i class="fa fa-chevron-down" aria-hidden="true"></i>Monitoring services with InfluxDB and Grafana</a></li>
+      <li><a href="#somsphere"><i class="fa fa-chevron-down" aria-hidden="true"></i>Self-Organizing-Map in Spherical Coordinates</a></li>
+      <li><a href="#continuous_integration"><i class="fa fa-chevron-down" aria-hidden="true"></i>Continuous integration and deployment (CI/CD)</a></li>
+      <li><a href="#data_vista"><i class="fa fa-chevron-down" aria-hidden="true"></i>Data Vista</a></li>
+      <li><a href="#easyaccess_plugins"><i class="fa fa-chevron-down" aria-hidden="true"></i>easyaccess plugin features</a></li>
+      <li><a href="#js9"><i class="fa fa-chevron-down" aria-hidden="true"></i>Jupyter Lab wrapper for images</a></li>
+    </ul>
+  </div>
 <hr />
-<h3>Current projects</h3>
-
 <div class="row">
-<h3> <u><tt>DESaccess</tt> development</u></h3>
+<a name="desaccess_development"></a>
+<h3><tt>DESaccess</tt> development
+  <a href="#top" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</h3>
 
   <div class="col-md-9" style="background-color:white;">
-    <p>This project focuses on <tt>DESaccess</tt>, a set of tools to access and analyze astronomical data, This web application is open source and is the main tool used by hundreds of astronomer around the globe. It provides means to query the Oracle DB hosting the DES data and generate cutouts from astronomical images. This project has three main components: <u> Front-end</u>, <u> back-end</u> and <u>deployment</u>. We continue to develop and improve these components, as we add new features and improve the overall system architecture. For a longer description of these tools please explore <a href="https://des.ncsa.illinois.edu/releases/dr1/dr1-access/dr1-ncsa">the DES public data release site</a>. 
+    <p>This project focuses on <tt>DESaccess</tt>, a set of tools to access and analyze astronomical data, This web application is open source and is the main tool used by hundreds of astronomer around the globe. It provides means to query the Oracle DB hosting the DES data and generate cutouts from astronomical images. This project has three main components:  Front-end,  back-end and deployment. We continue to develop and improve these components, as we add new features and improve the overall system architecture. For a longer description of these tools please explore <a href="https://des.ncsa.illinois.edu/releases/dr1/dr1-access/dr1-ncsa">the DES public data release site</a>. 
     </p>
     <p>
     The code powering <tt>DESaccess</tt> as well as the DES release site are <a href="https://github.com/des-labs">open source</a>. The <tt>DESaccess</tt> website is built HTML, JS and <a href="https://www.polymer-project.org/">LitElement from the Polymer Project</a> that provides a reusable web component framework. The <tt>DESaccess</tt> API server and job management system are written in Python and use packages including the <a href="http://www.tornadoweb.org/en/stable/">Tornado web framework</a> and the <a href="https://kubernetes.io/docs/reference/using-api/client-libraries/">Kubernetes</a> <a href="https://github.com/kubernetes-client/python/">Python API</a>. All of these applications are containerized using <a href="https://www.docker.com/">Docker</a> and run within a <a href="https://kubernetes.io/">Kubernetes cluster</a>, providing a robust system enabling high-availability services with scalable deployments and efficient resource usage.
     </p>
 
-<img src="architecture_DESaccess.png" width="100%"/>
+<img class="img-project img-border" src="architecture_DESaccess.png" width="80%"/>
 
 
 </div>
@@ -68,20 +108,25 @@ It depends on the features to be added, but medium is a good classification
 </ul>
 <br>
 <b> Links:</b><br>
-Code: <a href="https://github.com/des-labs"> https://github.com/des-labs</a><br />
-Page: <a href="https://des.ncsa.illinois.edu/desaccess/"> https://des.ncsa.illinois.edu/easyweb/</a>
+<ul>
+  <li><a href="https://des.ncsa.illinois.edu/desaccess/">Public DESaccess website</a></li>
+  <li><a href="https://github.com/des-labs">Source code</a><br /></li>
+</ul>
+
+
 </div>
 </div>
 <hr />
 
 
   <div class="row">
-<h3> <u>Galaxy images recommendation system</u></h3>
+<a name="galaxy_images"></a>
+<h3> Galaxy images recommendation system<a href="#top" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></h3>
   <div class="col-md-9" style="background-color:white;">
    This project will create a recommendation system when visualizing galaxy images and make recommendations to the user on similar galaxies. The main idea is to run a Convolutional Neural Network (CNN) and/or autoencoders to rank galaxies from a large DB by their similarities to a query image. There is already work done for this projects and mentor will provide all the necessary images and tools to be used. Ideally this will end up in a web application itself or as a addition to <tt>DESaccess</tt>. <br>
 
 <div>
-<img src="similar.png"/>
+<img class="img-project" src="similar.png"/>
 </div>
   </div>
   <div class="col-md-3" style="background-color:white;">
@@ -99,10 +144,13 @@ medium
 
 <hr />
 <div class="row">
-<h3> <u>Monitoring services with InfluDB and Graphana</u></h3>
+<a name="monitoring_services"></a>
+<h3> Monitoring services with InfluxDB and Grafana
+  <a href="#top" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</h3>
   <div class="col-md-9" style="background-color:white;">
    This project implements a logging system and a monitoring page for all the services provided by DES Labs, it uses InfluxDB and Grafana as main components and it will deployed using Docker Container and Kubernetes. We will use also to monitor not just the services status but other internal aspects of these services.<br>
-<img src="example.jpg" width="300px"/>
+<img class="img-project" src="example.jpg" width="300px"/>
   </div>
   <div class="col-md-3" style="background-color:white;">
 <b>Requirements: <br> </b>
@@ -117,10 +165,13 @@ easy
 
 <hr />
 <div class="row">
-<h3> <u>Somsphere</u></h3>
+<a name="somsphere"></a>
+<h3> Somsphere
+  <a href="#top" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</h3>
   <div class="col-md-9" style="background-color:white;">
    This project will convert current Self-Organizing-Map in Spherical Coordinates written in Python to a C++ implementation for efficiency. The application of Self-Organized-Maps, a class of unsupervised machine learning algorithm are vast. From clustering to accurate prediction and labeling. This is a on-going project with multiple applications to real scientific problems.
-<img src="som.png" width="50%"/>
+<img class="img-project" src="som.png" width="50%"/>
   </div>
   <div class="col-md-3" style="background-color:white;">
 <b>Requirements: <br> </b>
@@ -138,11 +189,22 @@ hard
 
 
 <div class="row">
-<h3> <u>Continuous integration and deployment (CI/CD)</u></h3>
+<a name="continuous_integration"></a>
+<h3> Continuous integration and deployment (CI/CD)
+  <a href="#top" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</h3>
   <div class="col-md-9" style="background-color:white;">
     Modern day DevOps practices involve continuous development, continuous testing, continuous integration, continuous deployment and continuous monitoring of software applications throughout their development life cycle. Our approach to implementing these concepts is itself continuously evolving as we optimize our own workflows and techniques. <br />
-    <a href="https://k14s.io/" target="_blank"><img src="k14s_logo.png" width="30%"/></a>&nbsp;&nbsp;&nbsp;
-    <img src="logo_jenkins.png" width="30%"/>&nbsp;&nbsp;&nbsp;
+    <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: center;">
+      <div>
+      <a href="https://carvel.dev/" target="_blank">
+        <img class="img-project" src="k14s_logo.png" width="40%"/>
+      </a>
+    </div>
+    <div>
+      <img class="img-project" src="logo_jenkins.png" width="40%"/>
+    </div>
+    </div>
   </div>
   <div class="col-md-3" style="background-color:white;">
 <b>Requirements: <br> </b>
@@ -160,10 +222,13 @@ easy
 
 
 <div class="row">
-<h3> <u>data vista</u></h3>
+<a name="data_vista"></a>
+<h3> Data Vista
+  <a href="#top" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</h3>
   <div class="col-md-9" style="background-color:white;">
 This project aims to provide an easy-to-use online plotting tool, for the tabular data retrieved from the DES database. The main usability will be to quickly assess the results of the retrieved queries by selecting between 2 to 4 columns to plot (the third and fourth columns will represent color and marker size). For refined visualizations we have more elaborated tools as Jupyter notebooks, then this feature needs to be robust, fast, simple, and clean.<br />
-<img src="data_vista.png" width="70%"/>
+<img class="img-project" src="data_vista.png" width="70%"/>
   </div>
   <div class="col-md-3" style="background-color:white;">
 <b>Requirements: <br> </b>
@@ -180,10 +245,13 @@ easy
 
 
 <div class="row">
-<h3> <u>easyaccess plugin features</u></h3>
+<a name="easyaccess_plugins"></a>
+<h3> easyaccess plugin features
+  <a href="#top" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</h3>
   <div class="col-md-9" style="background-color:white;">
    This project will add a plugin capabilities to <tt> easyaccess</tt>, a enhanced command line client to access data from astronomical surveys, currently used by hundreds of scientists, we have plans to make the client compatible with DES public access. It is entirely written in python, it is python2/3 compatible and it has a long number of nice and customized features, like tab-completion, find for user/tables download and upload tables with a large range of data file format. The idea for this project is to add a functionality os other scientists can add plugins and features. <br>
-<img src="help.gif" width="350px"/>
+<img class="img-project" src="help.gif" width="350px"/>
   </div>
   <div class="col-md-3" style="background-color:white;">
 <b>Requirements: <br> </b>
@@ -201,10 +269,13 @@ easy
 
 <hr />
 <div class="row">
-<h3> <u>Jupyter Lab wrapper for images </u></h3>
+<a name="js9"></a>
+<h3> Jupyter Lab wrapper for images 
+  <a href="#top" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+</h3>
   <div class="col-md-9" style="background-color:white;">
 This projects is to finish the implementation of a Jupyter Notebook wrapper for a visualization tool called <a href"https://github.com/ericmandel/js9">JS9</a> to visualize astronomical images and catalogs on the web. This wrapper is extremely useful and a long wanted feature to out Jupyter Hub implementation. We have a initial repository and it mainly requires Javascript and Python.<br />
-<img src="jupyter.png" width="15%"/>
+<img class="img-project" src="jupyter.png" width="15%"/>
   </div>
   <div class="col-md-3" style="background-color:white;">
 <b>Requirements: <br> </b>
