@@ -37,14 +37,16 @@
 <h3>Current projects</h3>
 
 <div class="row">
-<h3> <u><tt>desaccess</tt> development</u></h3>
+<h3> <u><tt>DESaccess</tt> development</u></h3>
 
   <div class="col-md-9" style="background-color:white;">
-This project focus on <tt>desaccess</tt>, a set of tools to access and analyze astronomical data, This web application is open sourced and is the main tool used by hundreds of astronomer around the Globe. This web application provides means to query a Oralce DB and generate cutouts from astronomical imges. This project has 3 main components: <u> Front-end</u>, <u> back-end</u> and <u>deployment</u>. These 3 areas are being developed and we have a few extra features we would like to add. For a longer description of these tools plese check here <a href="https://des.ncsa.illinois.edu/releases/dr1/dr1-access/dr1-ncsa">https://des.ncsa.illinois.edu/releases/dr1/dr1-access/dr1-ncsa</a>. <br> <br>
+    <p>This project focuses on <tt>DESaccess</tt>, a set of tools to access and analyze astronomical data, This web application is open source and is the main tool used by hundreds of astronomer around the globe. It provides means to query the Oracle DB hosting the DES data and generate cutouts from astronomical images. This project has three main components: <u> Front-end</u>, <u> back-end</u> and <u>deployment</u>. We continue to develop and improve these components, as we add new features and improve the overall system architecture. For a longer description of these tools please explore <a href="https://des.ncsa.illinois.edu/releases/dr1/dr1-access/dr1-ncsa">the DES public data release site</a>. 
+    </p>
+    <p>
+    The code powering <tt>DESaccess</tt> as well as the DES release site are <a href="https://github.com/des-labs">open source</a>. The <tt>DESaccess</tt> website is built HTML, JS and <a href="https://www.polymer-project.org/">LitElement from the Polymer Project</a> that provides a reusable web component framework. The <tt>DESaccess</tt> API server and job management system are written in Python and use packages including the <a href="http://www.tornadoweb.org/en/stable/">Tornado web framework</a> and the <a href="https://kubernetes.io/docs/reference/using-api/client-libraries/">Kubernetes</a> <a href="https://github.com/kubernetes-client/python/">Python API</a>. All of these applications are containerized using <a href="https://www.docker.com/">Docker</a> and run within a <a href="https://kubernetes.io/">Kubernetes cluster</a>, providing a robust system enabling high-availability services with scalable deployments and efficient resource usage.
+    </p>
 
-<a href="https://github.com/mgckind/desaccess">DESaccess code</a> as well as the <a href="https://github.com/mgckind/des_public_new">release page</a> are open sourced. The frontend was developed using web components, HTML, JS and <a href="https://www.polymer-project.org/">Polymer</a> which allows the re-use of already existing elements. The backend is mainly developed using the Python <a href="http://www.tornadoweb.org/en/stable/">Tornado web framework</a>. The submission jobs are handled by <a href="http://www.celeryproject.org/">Celery</a> which is a distributed queue manager written in Python. All of these applications are containerized using <a href="https://www.docker.com/">Docker</a> and all the nodes resources and scheduling, as well as all the deployment, is managed by <a href="https://kubernetes.io/">Kubernetes</a> which allows to run, manage and scale containerized applications in a robust and efficient manner.</p>
-
-<img src="DESaccess.png" width="60%"/>
+<img src="architecture_DESaccess.png" width="100%"/>
 
 
 </div>
@@ -66,8 +68,8 @@ It depends on the features to be added, but medium is a good classification
 </ul>
 <br>
 <b> Links:</b><br>
-Code: <a href="https://github.com/mgckind/desaccess"> https://github.com/mgckind/desaccess</a>
-Page: <a href="https://des.ncsa.illinois.edu/easyweb/"> https://des.ncsa.illinois.edu/easyweb/</a>
+Code: <a href="https://github.com/des-labs"> https://github.com/des-labs</a><br />
+Page: <a href="https://des.ncsa.illinois.edu/desaccess/"> https://des.ncsa.illinois.edu/easyweb/</a>
 </div>
 </div>
 <hr />
@@ -76,7 +78,7 @@ Page: <a href="https://des.ncsa.illinois.edu/easyweb/"> https://des.ncsa.illinoi
   <div class="row">
 <h3> <u>Galaxy images recommendation system</u></h3>
   <div class="col-md-9" style="background-color:white;">
-   This project will create a recommendation system when visualizing galaxy images and make recommendations to the user on similar galaxies. The main idea is to run a Convolutional Neural Network (CNN) and/or autoencoders to rank galaxies from a large DB by their similarities to a query image. There is already work done for this projects and mentor will provide all the necessary images and tools to be used. Ideally this will end up in a web application itself or as a addition to <tt>desaccesss</tt>. <br>
+   This project will create a recommendation system when visualizing galaxy images and make recommendations to the user on similar galaxies. The main idea is to run a Convolutional Neural Network (CNN) and/or autoencoders to rank galaxies from a large DB by their similarities to a query image. There is already work done for this projects and mentor will provide all the necessary images and tools to be used. Ideally this will end up in a web application itself or as a addition to <tt>DESaccess</tt>. <br>
 
 <div>
 <img src="similar.png"/>
@@ -99,7 +101,7 @@ medium
 <div class="row">
 <h3> <u>Monitoring services with InfluDB and Graphana</u></h3>
   <div class="col-md-9" style="background-color:white;">
-   This project implements a logging system and a monitoring page for all the services provided by DES Labs, it uses InfluxDB and Graphana as main components and it will deployed using Docker Container and Kubernetes. We will use also to monitor not just the services status but other internal aspects of these services.<br>
+   This project implements a logging system and a monitoring page for all the services provided by DES Labs, it uses InfluxDB and Grafana as main components and it will deployed using Docker Container and Kubernetes. We will use also to monitor not just the services status but other internal aspects of these services.<br>
 <img src="example.jpg" width="300px"/>
   </div>
   <div class="col-md-3" style="background-color:white;">
@@ -180,7 +182,7 @@ easy
 <div class="row">
 <h3> <u>easyaccess plugin features</u></h3>
   <div class="col-md-9" style="background-color:white;">
-   This project will add a plugin capabilities to <tt> easyaccess</tt>, a enhanced command line client to access data from astronomical surveys, currently used by hundreds of scientists, we have plans to make the client compatible with DES public access. It is entired written in python, it is python2/3 compatible and it has a long number of nice and customized features, like tab-completion, find for user/tables download and upload tables with a large range of data file format. The idea for this project is to add a functionality os other scientists can add plugins and features. <br>
+   This project will add a plugin capabilities to <tt> easyaccess</tt>, a enhanced command line client to access data from astronomical surveys, currently used by hundreds of scientists, we have plans to make the client compatible with DES public access. It is entirely written in python, it is python2/3 compatible and it has a long number of nice and customized features, like tab-completion, find for user/tables download and upload tables with a large range of data file format. The idea for this project is to add a functionality os other scientists can add plugins and features. <br>
 <img src="help.gif" width="350px"/>
   </div>
   <div class="col-md-3" style="background-color:white;">
