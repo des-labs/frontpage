@@ -35,9 +35,33 @@
       padding: 1rem;
       text-align: center;
     }
+    ul.project-list {
+      font-size: 1.8rem; 
+      list-style: none; 
+      padding: 0rem;
+    }
     ul.project-list > li > a {
       color: inherit;
       text-decoration: none;
+    }
+    .projects-overview {
+      font-size: 1.8rem;
+      display: grid; 
+      grid-template-columns: 8fr 7fr;
+      grid-column-gap: 2rem;
+    }
+    @media (max-width: 991px) {
+      ul.project-list {
+        font-size: 1.6rem; 
+      }
+      .projects-overview {
+        font-size: 1.6rem;
+      }
+    }
+    @media (max-width: 767px) {
+      .projects-overview {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -60,17 +84,27 @@
     </div>
   </div>
   <div class="row">
-    <h2>Current Projects</h2>
-    <ul class="project-list" style="font-size: 1.8rem; list-style: none; padding: 0rem;">
-      <li><a href="#desaccess_development"><i class="fa fa-chevron-down" aria-hidden="true"></i>DESaccess development</a></li>
-      <li><a href="#galaxy_images"><i class="fa fa-chevron-down" aria-hidden="true"></i>Galaxy images recommendation system</a></li>
-      <li><a href="#monitoring_services"><i class="fa fa-chevron-down" aria-hidden="true"></i>Monitoring services with InfluxDB and Grafana</a></li>
-      <li><a href="#somsphere"><i class="fa fa-chevron-down" aria-hidden="true"></i>Self-Organizing-Map in Spherical Coordinates</a></li>
-      <li><a href="#continuous_integration"><i class="fa fa-chevron-down" aria-hidden="true"></i>Continuous integration and deployment (CI/CD)</a></li>
-      <li><a href="#data_vista"><i class="fa fa-chevron-down" aria-hidden="true"></i>Data Vista</a></li>
-      <li><a href="#easyaccess_plugins"><i class="fa fa-chevron-down" aria-hidden="true"></i>easyaccess plugin features</a></li>
-      <li><a href="#js9"><i class="fa fa-chevron-down" aria-hidden="true"></i>Jupyter Lab wrapper for images</a></li>
-    </ul>
+    <div class="projects-overview col-md-12">
+      <div>
+        <h2>Current Projects</h2>
+        <ul class="project-list" style="">
+          <li><a href="#desaccess_development"><i class="fa fa-chevron-down" aria-hidden="true"></i>DESaccess development</a></li>
+          <li><a href="#galaxy_images"><i class="fa fa-chevron-down" aria-hidden="true"></i>Galaxy images recommendation system</a></li>
+          <li><a href="#monitoring_services"><i class="fa fa-chevron-down" aria-hidden="true"></i>Monitoring services with InfluxDB and Grafana</a></li>
+          <li><a href="#somsphere"><i class="fa fa-chevron-down" aria-hidden="true"></i>Self-Organizing-Map in Spherical Coordinates</a></li>
+          <li><a href="#continuous_integration"><i class="fa fa-chevron-down" aria-hidden="true"></i>Continuous integration and deployment (CI/CD)</a></li>
+          <li><a href="#data_vista"><i class="fa fa-chevron-down" aria-hidden="true"></i>Data Vista</a></li>
+          <li><a href="#easyaccess_plugins"><i class="fa fa-chevron-down" aria-hidden="true"></i>easyaccess plugin features</a></li>
+          <li><a href="#js9"><i class="fa fa-chevron-down" aria-hidden="true"></i>Jupyter Lab wrapper for images</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Overview</h2>
+        <p>
+          We work on a variety of projects, some of which are described on this page. Our flagship product and the most complex project is our <tt>DESaccess</tt> service, featured at the top. Most of our projects are open source and thus available to the general public and to anyone who wishes to help us develop these tools and services for the advancement of science. Use the Current Projects menu to jump to a project and learn more.
+        </p>
+      </div>
+    </div>
   </div>
 <hr />
 <div class="row">
