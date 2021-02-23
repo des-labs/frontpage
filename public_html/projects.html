@@ -117,7 +117,7 @@
     <p>This project focuses on <tt>DESaccess</tt>, an open source set of tools to access and analyze astronomical data, used as a primary research tool by hundreds of astronomer around the globe. It provides means to query the Oracle DB hosting the DES data and generate cutouts from astronomical images. This project has three main components:  Front-end,  back-end and deployment. We continue to develop and improve these components, as we add new features and improve the overall system architecture. For a longer description of these tools please explore <a href="https://des.ncsa.illinois.edu/releases/dr1/dr1-access/dr1-ncsa">the DES public data release site</a>. 
     </p>
     <p>
-    The code powering <tt>DESaccess</tt> as well as the DES release site are <a href="https://github.com/des-labs">open source</a>. The <tt>DESaccess</tt> website is built HTML, JS and <a href="https://www.polymer-project.org/">LitElement from the Polymer Project</a> that provides a reusable web component framework. The <tt>DESaccess</tt> API server and job management system are written in Python and use packages including the <a href="http://www.tornadoweb.org/en/stable/">Tornado web framework</a> and the <a href="https://kubernetes.io/docs/reference/using-api/client-libraries/">Kubernetes</a> <a href="https://github.com/kubernetes-client/python/">Python API</a>. All of these applications are containerized using <a href="https://www.docker.com/">Docker</a> and run within a <a href="https://kubernetes.io/">Kubernetes cluster</a>, providing a robust system enabling high-availability services with scalable deployments and efficient resource usage.
+    The code powering <tt>DESaccess</tt> as well as the DES release site are <a href="https://github.com/des-labs/desaccess-public">open source</a>. The <tt>DESaccess</tt> website is built HTML, JS and <a href="https://www.polymer-project.org/">LitElement from the Polymer Project</a> that provides a reusable web component framework. The <tt>DESaccess</tt> API server and job management system are written in Python and use packages including the <a href="http://www.tornadoweb.org/en/stable/">Tornado web framework</a> and the <a href="https://kubernetes.io/docs/reference/using-api/client-libraries/">Kubernetes</a> <a href="https://github.com/kubernetes-client/python/">Python API</a>. All of these applications are containerized using <a href="https://www.docker.com/">Docker</a> and run within a <a href="https://kubernetes.io/">Kubernetes cluster</a>, providing a robust system enabling high-availability services with scalable deployments and efficient resource usage.
     </p>
 
 <img class="img-project img-border" src="architecture_DESaccess.png" width="80%"/>
@@ -144,7 +144,7 @@ It depends on the features to be added, but medium is a good classification
 <b> Links:</b><br>
 <ul>
   <li><a href="https://des.ncsa.illinois.edu/desaccess/">Public DESaccess website</a></li>
-  <li><a href="https://github.com/des-labs">Source code</a><br /></li>
+  <li><a href="https://github.com/des-labs/desaccess-public">Source code</a><br /></li>
 </ul>
 
 
@@ -229,26 +229,32 @@ hard
 </h3>
   <div class="col-md-9" style="background-color:white;">
     Modern day DevOps practices involve continuous development, continuous testing, continuous integration, continuous deployment and continuous monitoring of software applications throughout their development life cycle. Our approach to implementing these concepts is itself continuously evolving as we optimize our own workflows and techniques. <br />
-    <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: center;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; align-items: center;">
       <div>
-      <a href="https://carvel.dev/" target="_blank">
-        <img class="img-project" src="k14s_logo.png" width="40%"/>
-      </a>
-    </div>
-    <div>
-      <img class="img-project" src="logo_jenkins.png" width="40%"/>
-    </div>
+        <img class="img-project" src="KubernetesLogo.jpg" style="height: 6rem;"/>
+      </div>
+      <div>
+        <a href="https://carvel.dev/" target="_blank">
+          <img class="img-project" src="logo_carvel.svg" style="height: 6rem;"/>
+        </a>
+      </div>
+      <div>
+        <img class="img-project" src="logo_argocd.png" style="height: 6rem;"/>
+      </div>
+      <div>
+        <img class="img-project" src="influxdb-grafana.png" style="height: 6rem;"/>
+      </div>
     </div>
   </div>
   <div class="col-md-3" style="background-color:white;">
 <b>Requirements: <br> </b>
-Jenkins, Docker, Kubernetes <br> <br>
+Docker, Kubernetes, ArgoCD, Helm <br> <br>
 
 <b> Difficulty: </b> <br>
-easy
+moderate
 <br><br>
 <b> Repository:
-    <a href="https://github.com/des-labs/deployment">https://github.com/des-labs/deployment</a> </b> <br>
+    <a href="https://github.com/des-labs/desaccess-public">https://github.com/des-labs/desaccess-public</a> </b> <br>
   </div>
 
 </div>
