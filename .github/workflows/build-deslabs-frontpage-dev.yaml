@@ -5,7 +5,7 @@ on:
     branches:
       - 'dev'
     paths:
-    - './**'
+    - '**'
     - '.github/workflows/build-deslabs-frontpage-dev.yaml'
 
 jobs:
