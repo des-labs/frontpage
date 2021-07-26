@@ -43,6 +43,10 @@
 .team-profile-entry {
   text-align: center;
 }
+.team-profile-entry > h3 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
 .team-profile-image {
   display: inline-block;
   width: 100px;
@@ -75,22 +79,22 @@
     transition: opacity 0.7s;
 }
 #Matias {
-  background-image: url("matias3.jpg");
+  background-image: url("matias_carrasco_kind.jpg");
 }
 #Matias:hover {
-  background-image: url("matias.png");
+  background-image: url("matias_carrasco_kind_hover.png");
 }
 #michael-johnson {
     content: url("michael_johnson.jpeg");
 }
 #michael-johnson:hover {
-    content: url("michael.jpeg");
+    content: url("michael_johnson_hover.jpeg");
 }
 #andrew-manning {
-    content: url("andrew_manning.jpeg");
+    content: url("andrew_manning.jpg");
 }
 #andrew-manning:hover {
-    content: url("andrew_manning_hover.jpeg");
+    content: url("andrew_manning_hover.jpg");
 }
 #jdmaloney {
     content: url("jd.jpeg");
