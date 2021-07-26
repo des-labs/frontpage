@@ -23,7 +23,10 @@
     text-decoration: none;
 }
 
-
+.big-links h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
 
 .arrow-left {
   display: inline;
@@ -164,4 +167,8 @@
 
 #Siwei {
     content: url("siwei.jpg");
+}
+
+.big-icon {
+    height: 10rem;
 }
