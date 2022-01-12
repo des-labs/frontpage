@@ -172,3 +172,35 @@
 .big-icon {
     height: 10rem;
 }
+
+.former-members {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    font-size: 2.0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.former-members p {
+    border-right: 1px lightgray solid;
+}
+
+.former-members a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 767px){
+    .former-members {
+        width: 100%;
+        font-size: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+    .former-members p {
+        border-right: none;
+    }
+}    
