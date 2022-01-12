@@ -24,7 +24,7 @@
 }
 
 .big-links h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -169,7 +169,7 @@
     content: url("siwei.jpg");
 }
 
-.big-icon {
+.big-icon img {
     height: 10rem;
 }
 
