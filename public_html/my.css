@@ -204,3 +204,8 @@
         border-right: none;
     }
 }    
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
