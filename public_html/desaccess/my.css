@@ -1,0 +1,211 @@
+.jumbotron {
+    margin-bottom: 0px;
+    height: 350px;
+    color: black;
+    background: transparent;
+}
+
+.menub {
+    padding-top: 35px;
+}
+
+.menub h4 {
+    font-size: 22px;
+}
+
+.selected {
+    color: black;
+    text-decoration: underline;
+}
+
+.noselected {
+    color: black;
+    text-decoration: none;
+}
+
+.big-links h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.arrow-left {
+  display: inline;
+  visibility: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-top: 42px;
+  margin-left: 2px;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right:8px solid black;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s; /* For Safari 3.1 to 6.0 */
+  transition: opacity 0.7s;
+}
+.team-profile-entry {
+  text-align: center;
+}
+.team-profile-entry > h3 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.team-profile-image {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:white;
+  text-align: center
+}
+.team-profile-links a {
+  font-size: 2.0rem;
+}
+#Matias-text {
+    display: inline;
+    padding: 5px;
+    float:right;
+    font-size: 10px;
+    position: absolute;
+    width: 85px;
+    text-align: left;
+    height: 100px;
+    margin-left: 10px;
+    visibility: hidden;
+    border: 0px solid gray;
+    border-radius: 7px;
+    background-color: black;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: opacity 0.7s; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.7s;
+}
+#Matias {
+  background-image: url("matias_carrasco_kind.jpg");
+}
+#Matias:hover {
+  background-image: url("matias_carrasco_kind_hover.png");
+}
+#michael-johnson {
+    content: url("michael_johnson.jpeg");
+}
+#michael-johnson:hover {
+    content: url("michael_johnson_hover.jpeg");
+}
+#andrew-manning {
+    content: url("andrew_manning.jpg");
+}
+#andrew-manning:hover {
+    content: url("andrew_manning_hover.jpg");
+}
+#jdmaloney {
+    content: url("jd.jpeg");
+}
+#jdmaloney:hover {
+    content: url("jd_hover.jpeg");
+}
+#Matias:hover ~ #Matias-text {
+    visibility: hidden;
+    opacity: 0.8;
+}
+#Matias:hover + .arrow-left {
+    visibility: hidden;
+    opacity: 0.8;
+}
+#Ruiqi {
+    content: url("ruiqi.jpg");
+}
+
+#Bowen {
+    content: url("bowen.jpeg");
+}
+
+#Sahand {
+    content: url("sahand.png");
+}
+
+
+#JD {
+    content: url("jd.jpeg");
+}
+
+#Pranavi {
+    content: url("pranavi.jpeg");
+}
+#Francisco {
+    content: url("francisco.jpg");
+}
+#Francisco:hover {
+    content: url("francisco2.jpg");
+}
+#Audrey {
+    content: url("audrey.png");
+}
+#Felipe {
+    content: url("felipe.jpg");
+}
+#Landon {
+    content: url("landon.jpg");
+}
+#Landon:hover {
+    content: url("landon2.jpg");
+}
+#Weixiang {
+    content: url("weixiang.jpg");
+}
+
+#Di {
+    content: url("mark.png");
+}
+#Lauren {
+    content: url("Logo_small.png");
+}
+#Yeoh {
+    content: url("yeoh.png");
+}
+
+#Siwei {
+    content: url("siwei.jpg");
+}
+
+.big-icon img {
+    height: 10rem;
+}
+
+.former-members {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    font-size: 2.0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.former-members p {
+    border-right: 1px lightgray solid;
+}
+
+.former-members a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 767px){
+    .former-members {
+        width: 100%;
+        font-size: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+    .former-members p {
+        border-right: none;
+    }
+}    
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
